@@ -1,3 +1,120 @@
+:root {
+    --bg-color: #ECF2F8;
+    --white-color: #fff;
+    --primary-color: #733FC8;        /* hsl(263, 55%, 52%) */
+    --primary-accent-color: #A775F1;
+    --secondary-color:#48556A;       /* hsl(217, 19%, 35%)  */
+    --tertiary-color: #19202D;       /* hsl(219, 29%, 14%)  */
+    --lightest-gray-color: #CFCFCF;
+    
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color);
+    background-color:var(--bg-color);
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.card {
+    box-sizing: border-box;
+    background: #733FC8;
+    border-radius: 10px;
+    padding: 1.75em;
+    margin: 1.5em auto;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "img name"
+        "img title"
+        "main-quote main-quote"
+        "testimonial testimonial" ;
+}
+
+.card__name {
+    grid-area: name;
+    font-size: .8125rem;
+    font-weight: 500; 
+}
+
+.card__title {
+    grid-area: title;
+    font-size: .6875rem;
+    opacity: 50%;
+}
+
+.card__main-quote {
+    grid-area: main-quote;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.card__testimonial {
+    font-size: .8125rem;
+    grid-area: testimonial;
+    color: var(--testimonial-color);
+    opacity: 70%;
+    line-height: 1.6;
+}
+
+.card__img {
+    grid-area: img;
+    height: 28px;
+    width: auto;
+    border-radius: 100%;
+}
+
+.accent-border {
+    border: 2px solid var(--primary-accent-color);    
+}
+
+.purple-color-scheme {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.dark-blue-color-scheme {
+    background: var(--tertiary-color);
+    color: var(--white-color);
+}
+
+.dark-gray-color-scheme {
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.white-color-scheme {
+    background: var(--white-color);
+    color: var(--secondary-color);
+}
+
+/* @media (min-width: 600) {
+    body {
+        background-color: dodgerblue;
+    }
+}
+
+@media (min-width: 600) {
+    body {
+        background-color: dodgerblue;
+    }
+}
+
+@media (min-width: 600) {
+    body {
+        background-color: dodgerblue;
+    }
+} */
 
 
 .attribution { font-size: 11px; text-align: center; }
