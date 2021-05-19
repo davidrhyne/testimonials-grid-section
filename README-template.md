@@ -15,8 +15,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -28,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![desktop image](https://user-images.githubusercontent.com/63062052/118840932-73585380-b88d-11eb-94ec-d56b7206ba04.png)
-![mobile image](https://user-images.githubusercontent.com/63062052/118840757-4f950d80-b88d-11eb-8efd-736622aad141.png)
+![mobile image](https://user-images.githubusercontent.com/63062052/118841956-62f4a880-b88e-11eb-8ab6-cb487b313bbd.png)
 
 ### Links
 
