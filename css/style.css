@@ -15,6 +15,7 @@ body {
     font-weight: 500;
     color: var(--white-color);
     background-color:var(--bg-color);
+    margin: 4em auto;
 }
 
 h1, h2, p {
@@ -34,12 +35,12 @@ h1, h2, p {
     box-sizing: border-box;
     background: #733FC8;
     border-radius: 10px;
-    padding: 1.75em;
-    margin: 1.5em;
+    padding: 2em 1.75em;
+    margin: 1em;
     max-width: 450px;
     display: grid;
     grid-template-columns: 45px auto;
-    grid-template-rows: 16px 16px auto;
+    grid-template-rows: 16px 16px auto minmax(auto, 1fr);
     grid-template-areas: 
         "img name"
         "img title"
@@ -95,11 +96,14 @@ h1, h2, p {
     grid-area: card1;
     background: var(--primary-color);
     color: var(--white-color);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 85% 0%; 
 }
 
 .card2 {
     grid-area: card2;
-    background: var(--tertiary-color);
+    background: var(--secondary-color);
     color: var(--white-color);
 }
 
@@ -109,7 +113,7 @@ h1, h2, p {
 
 .card4 {
     grid-area: card4;
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     color: var(--white-color);
 }
 
@@ -125,16 +129,16 @@ h1, h2, p {
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     .container {
-        background-color: dodgerblue;
+        /* background-color: dodgerblue; */
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(250px, auto) minmax(250px, auto);
         grid-template-areas: 
-            "card1 card1"
-            "card2 card4"
-            "card3 card5";
-        gap: 1em;
+            "card1 card4"
+            "card2 card3"
+            "card5 card5";
+        gap: 2em;
         padding: 2em;
         align-items: unset;
     }
@@ -143,18 +147,15 @@ h1, h2, p {
         max-width: 600px;
         margin: 0;
     }
+
+
 }
 
-@media (min-width: 900px) {
-    body {
-        background-color: brown;
-    }
-}
 
 @media (min-width: 1100px) {
     .container {
-        background-color: goldenrod;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* background-color: goldenrod; */
+        grid-template-columns: repeat(4, minmax(200px, auto));
         grid-template-areas: 
             "card1 card1 card2 card5"
             "card3 card4 card4 card5";
@@ -163,9 +164,30 @@ h1, h2, p {
     .card {
         max-width: 600px;
         margin: 0;
+        padding: 2em;
+    }
+
+    .card1 {
+        background-position: 80% 0%; 
     }
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--tertiary-color);
+    width: 400px;
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    margin: 2em auto;
+}
+.attribution a { 
+    color: var(--primary-accent-color);
+    text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:focus { 
+    background: var(--primary-accent-color); 
+    color: var(--white-color); 
+    padding: 1px 3px;
+}
