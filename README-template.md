@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop](![image](![image](https://user-images.githubusercontent.com/63062052/118840932-73585380-b88d-11eb-94ec-d56b7206ba04.png))
+![mobile](![image](https://user-images.githubusercontent.com/63062052/118840757-4f950d80-b88d-11eb-8efd-736622aad141.png))
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [@github](https://github.com/davidrhyne/testimonials-grid-section)
+- Live Site URL: [@github pages](https://davidrhyne.github.io/testimonials-grid-section/)
 
 ## My process
 
